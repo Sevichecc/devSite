@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix && prettier --write ."
+    "lint:fix": "eslint . --fix && prettier --write . --plugin=prettier-plugin-astro"
   },
   "dependencies": {
     "astro": "2.10.9"
