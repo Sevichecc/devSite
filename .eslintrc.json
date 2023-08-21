@@ -3,7 +3,11 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["@antfu", "plugin:astro/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:astro/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "overrides": [
     {
       "files": ["*.astro"],
@@ -16,7 +20,8 @@
       "rules": {
         // "astro/no-set-html-directive": "error"
         "no-tabs": ["off", { "allowIndentationTabs": true }],
-        "no-mixed-spaces-and-tabs": "off"
+        "no-mixed-spaces-and-tabs": "off",
+        "if-newline": "off"
       }
     }
   ],
